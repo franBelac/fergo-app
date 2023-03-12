@@ -1,0 +1,102 @@
+.button {
+    -fx-background-color: linear-gradient(to left, rgba(164,21,9,0.9), rgba(35,44,63,0.5));
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-opacity: 0.85;
+    -fx-text-fill: red;
+    -fx-alignment: center;
+}
+
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view:focused {
+    -fx-background-color: transparent;
+}
+
+
+.table-cell:filled {
+    /*-fx-background-color: rgb(65,65,65);*/
+    -fx-text-fill: white;
+}
+
+
+/*.table-view:row-selection .table-row-cell:selected .table-cell {*/
+
+/*}*/
+
+.table-view .column-header-background {
+    -fx-background-color: rgb(40,40,40);
+    -fx-text-fill: white;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: rgb(40,40,40);
+    -fx-padding: 0;
+}
+
+.table-row-cell:even {
+    -fx-background-color: rgb(65,65,65);
+    -fx-padding: 0;
+}
+
+.table-cell:even {
+    -fx-border-color: rgb(40,40,40);
+
+}
+
+.table-cell:even .button {
+    -fx-background-color: rgb(40,40,40);
+}
+
+.table-cell:odd {
+    -fx-border-color: rgb(65,65,65);
+}
+
+.table-cell:odd .button {
+    -fx-background-color: rgb(65,65,65);
+}
+
+.table-cell {
+    -fx-alignment: center;
+}
+
+#column2:even {
+    -fx-alignment: center;
+}
+
+#column2:odd {
+    -fx-alignment: center;
+}
+
+
+/*micanje donjeg scrollbara - eksperimentalno*/
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow,
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+}

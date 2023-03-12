@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="700.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.MainMenuController">
+   <center>
+      <AnchorPane prefHeight="457.0" prefWidth="606.0" style="-fx-background-color: rgb(65,65,65);" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <AnchorPane prefHeight="287.0" prefWidth="200.0" style="-fx-background-color: rgb(40,40,40);" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnCreateRac" layoutX="21.0" layoutY="51.0" mnemonicParsing="false" onAction="#clickCreateRac" prefHeight="70.0" prefWidth="158.0" style="-fx-background-radius: 40px;" text="Create Race" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Bold" size="19.0" />
+               </font></Button>
+            <Button fx:id="btnRunRac" layoutX="21.0" layoutY="154.0" mnemonicParsing="false" onAction="#clickRunRace" prefHeight="70.0" prefWidth="158.0" style="-fx-background-radius: 40px;" text="Run Race" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Bold" size="24.0" />
+               </font></Button>
+            <ImageView fx:id="gear" fitHeight="43.0" fitWidth="42.0" layoutX="7.0" layoutY="351.0" onMouseEntered="#gearRotationEnter" onMouseExited="#gearRotationExit" onMousePressed="#clickGear" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <image>
+                  <Image url="@/images/finalGear.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="excelBtn" layoutX="21.0" layoutY="257.0" mnemonicParsing="false" onAction="#clickExcel" prefHeight="70.0" prefWidth="158.0" style="-fx-background-radius: 40px;" text="Use Excel" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Bold" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="457.0" prefWidth="606.0" style="-fx-background-color: rgb(65,65,65);"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.controller.InputLocalController">
+   <Label layoutX="51.0" layoutY="27.0" prefHeight="51.0" prefWidth="252.0" text="Set info for team" textFill="WHITE">
+      <font>
+         <Font name="Monospaced Regular" size="24.0"/>
+      </font>
+   </Label>
+   <Label fx:id="teamNumberLabel" alignment="CENTER" layoutX="303.0" layoutY="32.0" prefHeight="41.0" prefWidth="51.0"
+          text="1" textFill="WHITE">
+      <font>
+         <Font name="Arial Black" size="24.0"/>
+      </font>
+   </Label>
+   <TextField fx:id="teamNameField" layoutX="131.0" layoutY="111.0"/>
+   <Label layoutX="29.0" layoutY="105.0" prefHeight="38.0" prefWidth="102.0" text="Team name: " textFill="WHITE">
+      <font>
+         <Font name="Arial Black" size="14.0"/>
+      </font>
+   </Label>
+   <Label layoutX="329.0" layoutY="105.0" prefHeight="38.0" prefWidth="177.0" text="Short name (optional): "
+          textFill="WHITE">
+      <font>
+         <Font name="Arial Black" size="14.0"/>
+      </font>
+   </Label>
+   <TextField fx:id="shortTeamField" layoutX="507.0" layoutY="111.0" prefHeight="26.0" prefWidth="51.0"/>
+   <Line endX="303.00006103515625" layoutX="606.0" layoutY="153.0" startX="-303.0" AnchorPane.leftAnchor="0.0"
+         AnchorPane.rightAnchor="0.0">
+      <stroke>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.5157894492149353"/>
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0"/>
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </stroke>
+   </Line>
+   <Label layoutX="29.0" layoutY="166.0" prefHeight="38.0" prefWidth="124.0" text="Rowers' names" textFill="WHITE">
+      <font>
+         <Font name="Arial Black" size="14.0"/>
+      </font>
+   </Label>
+   <TextField fx:id="rowerField2" layoutX="78.0" layoutY="275.0"/>
+   <TextField fx:id="rowerField4" layoutX="78.0" layoutY="382.0"/>
+   <TextField fx:id="rowerField3" layoutX="80.0" layoutY="327.0"/>
+   <TextField fx:id="rowerField6" layoutX="354.0" layoutY="275.0"/>
+   <TextField fx:id="rowerField7" layoutX="354.0" layoutY="327.0"/>
+   <TextField fx:id="rowerField8" layoutX="354.0" layoutY="382.0"/>
+   <TextField fx:id="rowerField1" layoutX="78.0" layoutY="216.0"/>
+   <TextField fx:id="rowerField5" layoutX="354.0" layoutY="216.0"/>
+   <Button layoutX="532.0" layoutY="417.0" mnemonicParsing="false" onAction="#clickNext" text="Next"
+           AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0"/>
+   <Button layoutX="14.0" layoutY="416.0" mnemonicParsing="false" onAction="#clickBack" prefHeight="26.0"
+           prefWidth="42.0" text="Back" AnchorPane.bottomAnchor="14.600000000000001" AnchorPane.leftAnchor="14.0"/>
+   <ImageView fitHeight="112.0" fitWidth="100.0" layoutX="510.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true"
+              AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="0.0">
+      <image>
+         <Image url="@/images/LogoTrans.png"/>
+      </image>
+   </ImageView>
+   <TextField fx:id="rowerField9" layoutX="441.0" layoutY="216.0"/>
+   <TextField fx:id="rowerField11" layoutX="441.0" layoutY="327.0"/>
+   <TextField fx:id="rowerField10" layoutX="441.0" layoutY="275.0"/>
+   <TextField fx:id="rowerField12" layoutX="441.0" layoutY="382.0"/>
+</AnchorPane>
